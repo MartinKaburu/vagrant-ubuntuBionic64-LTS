@@ -5,4 +5,6 @@ Spin an ubuntu bionic LTS server with vagrant and provision it with shell
 ### Provision the VM
 `$ vagrant provision`
 ### SSH into the VM
-`$ ssh -i $PATH_TO_PUBLIC_KEY vagrant@192.168.60.70` || `$ vagrant ssh`
+run `$ vagrant ssh-config` to get the path to your PRIVATE_KEY
+
+`$ ssh -i $PATH_TO_PRIVATE_KEY vagrant@192.168.60.70` || `$ vagrant ssh`
